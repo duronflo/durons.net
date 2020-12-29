@@ -1,5 +1,4 @@
 ---
-layout: single
 title: VW T4 - Ausbau zum Freizeitcamper
 permalink: /projects/vw_t4
 ---

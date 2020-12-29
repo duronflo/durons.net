@@ -1,7 +1,9 @@
 # main links
 main:
   - title: "Projekte"
-    url: /projects/project-list
+    url: /projects
+  - title: "Technologien"
+    url: /technologies
   - title: "Über mich"
     url: /about
   # - title: "About"

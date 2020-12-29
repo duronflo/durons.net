@@ -1,6 +1,6 @@
 ---
-title: Chocolate Pi
-permalink: /projects/chocolate-pi
+title: Erster Post auf der neuen Page
+permalink: /projects/d-pi
 date:   2020-12-28 12:54:10 +0100
 categories: jekyll update
 ---
