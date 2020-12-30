@@ -5,7 +5,7 @@ title: Übersicht Projekte
 permalink: /projects/
 ---
 
-
+<ul>
   {% for project in site.projects %}
       <h1><a href="{{ project.url }}">{{ project.title }} </a> </h1>
 
@@ -41,3 +41,4 @@ permalink: /projects/
     <p><p><p>
 
   {% endfor %}
+</ul>

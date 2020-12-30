@@ -5,7 +5,7 @@ title: Übersicht Technologien
 permalink: /technologies/
 ---
 
-
+<ul>
   {% for technology in site.technologies %}
       <h1><a href="{{ technology.url }}">{{ technology.title }} </a> </h1>
 
@@ -34,3 +34,4 @@ permalink: /technologies/
     <p><p><p>
 
   {% endfor %}
+</ul>
