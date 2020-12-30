@@ -1,21 +1,24 @@
 ---
-title: Erster Post auf der neuen Page
+title: Erste Schritte mit dem Chocolate Pi
 permalink: /projects/d-pi
-date:   2020-12-28 12:54:10 +0100
-categories: jekyll update
+categories: [ChocolatePi, Do-it-your-self]
+tags: [Raspberry-Pi, Audio]
 project: choc-pi
 ---
 
-Hierbei ging es mir einen aktiven Lautsprecher für die Küche. Ich koche sehr gerne und wollte ich schon immer etwas schickes,
- was ich auch von der Ferne aus steuern kann. Daraus ist folgende Lautsprecher-Box entstanden.
+## Einleitung
+
+
+Hierbei ging es mir einen aktiven Lautsprecher für die Küche. Ich koche sehr gerne und wollte ich schon immer etwas schickes, 
+was ich auch von der Ferne aus steuern kann. Daraus ist folgende Lautsprecher-Box entstanden.
  
-Bilder
  
  Sie kann entweder mit einem AUX-Kabel betrieben oder Remote mit Hilfe eines Smartphones. Für den Remotezugriff habe ich 
  einen Raspberry Pi verbaut, welcher die komplette Netzwerkfunktionalität bereitstellt. Die Vorderseite ist bestückt mit 
  einem Drehpoti zum Einstellen der perferkten Lautstärke einer Status-LED und einem Taster. Auf der Rückseite des Geräts 
  befinden sich ein AUX-Eingang, der Netzstecker und ein USB-Device für Software-Updates aber auch als Datenquelle für 
  Musik.
+ 
 
 Hierbei ging es mir einen aktiven Lautsprecher für die Küche. Ich koche sehr gerne und wollte ich schon immer etwas schickes,
 was ich auch von der Ferne aus steuern kann. Daraus ist folgende Lautsprecher-Box entstanden.
@@ -29,6 +32,8 @@ der Netzstecker und ein USB-Device für Software-Updates aber auch als Datenquel
 Hier werde ich kurz erklären wie man auf dem Raspberry Pi mit Rasbian den Logitech Media Server (LMS) installiert. Außerdem wird 
 anhand von softsqueeze demonstriert wie man den Raspberry Pi auch als LMS-client verwenden kann, dazu noch ein Hifiberry Soundmodul 
 mit in die Umgebung eingebunden. Die Client-Installation kann auch auf andere Raspberry Pi Clients übertragen werden.
+
+## Vorgehensweise / Installation
 
 Offizielles Raspbian-Image herunterladen bei www.raspberrypi.org
 
