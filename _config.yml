@@ -127,6 +127,7 @@ include:
   - .htaccess
   - _pages
   - _projects
+  - _technologies
 
 exclude:
   - "*.sublime-project"
@@ -257,7 +258,18 @@ defaults:
     values:
       layout: project
       author_profile: true
-      read_time: true
+      read_time: false
+      comments: # true
+      share: true
+      related: true
+      show_date: true
+  # _technologies
+  - scope:
+      path: "_technologies"
+    values:
+      layout: technology
+      author_profile: true
+      read_time: false
       comments: # true
       share: true
       related: true
@@ -277,3 +289,4 @@ defaults:
 
 collections:
   projects:
+  technologies:

@@ -4,7 +4,9 @@ title: MagicLight
 permalink: /projects/magiclight
 project_start:   2012-10-01 
 status: nicht abgeschlossen
-categories: XMEGA8 Atmel WS2812 Arduino
+categories: [Elektronik, Software, Do-it-yourself]
+tags: [XMEGA8, Atmel, Arduino, WS2812]
+short_description: 'Hardware und Software-Design auf Basis Atmel XMEGA8 zur Steuerung von WS2812 Leds.'
 ---
 
 
