@@ -1,6 +1,10 @@
 ---
+short_name: magiclight
 title: MagicLight
 permalink: /projects/magiclight
+project_start:   2012-10-01 
+status: nicht abgeschlossen
+categories: XMEGA8 Atmel WS2812 Arduino
 ---
 
 

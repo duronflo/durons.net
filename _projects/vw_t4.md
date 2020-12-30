@@ -1,4 +1,5 @@
 ---
+short_name: vw-t4
 title: VW T4 - Ausbau zum Freizeitcamper
 permalink: /projects/vw_t4
 ---

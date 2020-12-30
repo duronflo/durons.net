@@ -31,6 +31,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
+show_date                : true
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -97,7 +98,7 @@ analytics:
 author:
   name             : "Florian Richter"
   avatar           : /assets/images/bio.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Engineer with passion for travelling and cooking."
+  bio              : "Just another engineer with passion for technology, travelling and cooking."
   location         : "Munich, Germany"
   email            : "flo@durons.net"
   links:
@@ -250,9 +251,21 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _projects
   - scope:
       path: "_projects"
+    values:
+      layout: project
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      show_date: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
     values:
       layout: single
       author_profile: true
@@ -261,3 +274,5 @@ defaults:
       share: true
       related: true
 
+collections:
+  projects:

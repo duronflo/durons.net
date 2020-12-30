@@ -4,6 +4,8 @@ main:
     url: /projects
   - title: "Technologien"
     url: /technologies
+  - title: "Archiv"
+    url: /archive
   - title: "Über mich"
     url: /about
   # - title: "About"
