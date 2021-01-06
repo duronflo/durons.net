@@ -4,7 +4,6 @@ permalink: /projects/chocolate-pi/first-steps-chocolate-pi
 categories: [ChocolatePi, Do-it-your-self]
 tags: [Raspberry-Pi, Audio]
 project: choc-pi
-comments: true
 ---
 
 ## Einleitung
