@@ -8,8 +8,6 @@ classes: wide
 
 ---
 
-
-
 ## Der Anfang mit React Native
 
 ## Wichtige Links bzw. Dateien
