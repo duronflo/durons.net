@@ -57,6 +57,7 @@ Codesnippet:
 
 Strukturierung in AppNavigator Klasse zur übersichtlichen Erzeugen von Tab-Strukuren.
 
+{% raw  %}
 {% highlight javascript linenos %}
 
 import React from 'react';
@@ -132,3 +133,4 @@ export default function AppNavigator() {
 
 
 {% endhighlight %}
+{% endraw  %}
