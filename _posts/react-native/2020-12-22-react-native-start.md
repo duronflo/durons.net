@@ -1,13 +1,17 @@
 ---
 title: Erste Schritte mit dem App-Framework React native
 permalink: /technology/react-native/first-steps-react-native
-categories: [App-Development]
-tags: [JavaScript, Node, Android, IPhone]
+categories:
+  - App-Development
+tags:
+  - JavaScript
+  - Node
+  - Android
+  - IPhone
+  - ReactNative
 technology: react-native
 classes: wide
-
 ---
-
 
 ## Der Anfang mit React Native
 
@@ -57,8 +61,9 @@ Codesnippet:
 
 Strukturierung in AppNavigator Klasse zur übersichtlichen Erzeugen von Tab-Strukuren.
 
-{% raw  %}
+
 {% highlight javascript linenos %}
+{% raw  %}
 
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -131,6 +136,5 @@ export default function AppNavigator() {
     );
 }
 
-
-{% endhighlight %}
 {% endraw  %}
+{% endhighlight %}
