@@ -15,6 +15,7 @@ classes: wide
 
 ![](/assets/images/react-native-lifecycle.png)
 
+
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 ## Flex-Box - Flexible und dynamische Gestaltung von Widgets in Apps
@@ -50,4 +51,84 @@ Codesnippet:
             height: 100
         }
     });
+{% endhighlight %}
+
+## Navigation mit verschiedenen Möglichkeiten (Beispiel: BottomTabs)
+
+Strukturierung in AppNavigator Klasse zur übersichtlichen Erzeugen von Tab-Strukuren.
+
+{% highlight javascript linenos %}
+
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer} from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import * as Icon from '@expo/vector-icons'
+
+/* Screens have been outsourced*/
+import FriendScreen from "./screens/FriendScreen";
+import SettingScreen from "./screens/SettingScreen";
+
+const Tab = createBottomTabNavigator();
+
+
+export default function AppNavigator() {
+    return (
+        <NavigationContainer>
+            <Tab.Navigator
+
+                screenOptions={ ({route}) => {
+                    return {
+                        tabBarIcon: ({focused, size, color}) => {
+
+                            let icon = '';
+                            // route 'Home' --> home
+                            if (route.name === 'Home')
+                                icon = focused ? 'home' : 'home-outline';
+                            // route 'Settings' --> settings
+                            else if (route.name === 'Settings')
+                                icon = focused ? 'settings' : 'settings-outline';
+                            else
+                                icon = '';
+
+                            return (
+                                <Icon.Ionicons
+                                    // @ts-ignore
+                                    name={icon}
+                                    size={size}
+                                    color={color}
+                                />
+                            );
+                        },
+                    };
+                }
+                }
+                tabBarOptions={{
+                    activeTintColor: 'orange',
+                    style: {backgroundColor: 'aliceblue'},
+                }}
+
+                >
+                <Tab.Screen
+                    name='Home'
+                    component={FriendScreen}
+                    options={{
+                        title: 'Home'
+
+                    }}
+                />
+                <Tab.Screen
+                    name='Settings'
+                    component={SettingScreen}
+                    options={{
+                        title: 'Einstellungen'
+
+                    }}
+                />
+            </Tab.Navigator>
+        </NavigationContainer>
+    );
+}
+
+
 {% endhighlight %}
