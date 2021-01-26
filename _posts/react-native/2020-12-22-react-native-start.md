@@ -20,12 +20,14 @@ classes: wide
 ![](/assets/images/react-native-lifecycle.png)
 
 
+
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 ## Flex-Box - Flexible und dynamische Gestaltung von Widgets in Apps
 
 Codesnippet:
 {% highlight javascript linenos %}
+{% raw  %}
 
     import {StatusBar} from 'expo-status-bar';
     import React, {Component} from 'react';
@@ -55,6 +57,7 @@ Codesnippet:
             height: 100
         }
     });
+{% endraw  %}
 {% endhighlight %}
 
 ## Navigation mit verschiedenen Möglichkeiten (Beispiel: BottomTabs)
@@ -228,7 +231,7 @@ Dokumentation zu TouchableOpacity: [reactnative.dev/docs/touchableopacity](react
 Allgemeines zur Image-Komponente: [reactnative.dev/docs/images](reactnative.dev/docs/images)
 
 
-#### ScrollView - Kurzer Scroll, falls nicht alles auf Page passt
+#### ScrollView - Verwendet fü kurzen Scroll, falls nicht alles auf Page passt
 
 ScrollView sollte nur für kurze "Scrolls" verwendet werden. Für lange Scrolls immer FlatList oder SectionList verwenden.
 
