@@ -247,3 +247,28 @@ Beispielweise kann man auch die aktuelle Screengröße des Zielgeräts abfragen:
 const width = Dimensions.get('window').width * 0.5;
 {% endraw  %}
 {% endhighlight %}
+
+
+## Update von NodeJs auf aktuelleste Version
+
+
+
+Use n module from npm in order to upgrade node
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+
+To upgrade to latest version (and not current stable) version, you can use
+
+sudo n latest
+
+    Fix PATH:
+
+      sudo apt-get install --reinstall nodejs-legacy     # fix /usr/bin/node
+
+    To undo:
+
+      sudo n rm 6.0.0     # replace number with version of Node that was installed
+      sudo npm uninstall -g n
+
