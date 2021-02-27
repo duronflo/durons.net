@@ -246,4 +246,4 @@ Beispielweise kann man auch die aktuelle Screengröße des Zielgeräts abfragen:
 {% raw  %}
 const width = Dimensions.get('window').width * 0.5;
 {% endraw  %}
-{% endhighlight %
+{% endhighlight %}
