@@ -9,17 +9,9 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script: ./script/cibuild
 
-env:
-  global:
-  - 'SFTP_USER=w018f53c'
-  - 'SFTP_PASSWORD=SF66PmAs9U5J'
-  - 'SFTP_KEY=[base64-encoded-rsa-key]'
 after_success:
-- echo "${SFTP_KEY}" | base64 --decode >/tmp/sftp_rsa
-- curl --ftp-create-dirs
-       -T filename
-       --key /.site
-       sftp://${SFTP_USER}:${SFTP_PASSWORD}@w018f53c.kasserver.com/durons.net/
+- cd ./_site; find * -type f -exec curl --ftp-create-dirs -T {} ftp://w018f53c:SF66PmAs9U5J@w018f53c.kasserver.com/durons.net/{} \;
+
 
 addons:
   apt:
