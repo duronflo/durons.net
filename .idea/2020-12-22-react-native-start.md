@@ -232,7 +232,7 @@ Allgemeines zur Image-Komponente: [reactnative.dev/docs/images](reactnative.dev/
 
 #### ScrollView
 
-ScrollView sollte nur für kurze "Scrolls" verwendet werden. Für lange Scrolls immer FlatList oder SectionList verwenden.
+ScrollView sollte nur für kurze Scrolls verwendet werden. Für lange Scrolls immer FlatList oder SectionList verwenden.
 
 Dokumentation zu ScrollView: [reactnative.dev/docs/scrollview](reactnative.dev/docs/scrollview)
 
