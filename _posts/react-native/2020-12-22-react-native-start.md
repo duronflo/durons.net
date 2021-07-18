@@ -230,7 +230,7 @@ Dokumentation zu TouchableOpacity: [reactnative.dev/docs/touchableopacity](react
 Allgemeines zur Image-Komponente: [reactnative.dev/docs/images](reactnative.dev/docs/images)
 
 
-#### ScrollView 
+#### ScrollView
 
 ScrollView sollte nur für kurze "Scrolls" verwendet werden. Für lange Scrolls immer FlatList oder SectionList verwenden.
 
@@ -249,9 +249,7 @@ const width = Dimensions.get('window').width * 0.5;
 {% endhighlight %}
 
 
-## Update von NodeJs auf aktuelleste Version
-
-
+## Update von NodeJs auf aktuellste Version
 
 Use n module from npm in order to upgrade node
 
